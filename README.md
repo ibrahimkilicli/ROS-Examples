@@ -31,7 +31,16 @@ Terminal ekranını üçe bölüyoruz. Birinci ekranda roscore komutunu yazarak 
 
 
 # topic örneği
+
 sctipts klasörünün içerisine topic_orneği.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminali ikiye bölüyoruz. İlk ekranda roscore komutunu yazarak ros çekirdeğini başlatıyoruz. İkinci ekranda rosrun uygulamalar topic_ornegi.py diyerek dosyamızı başlatıyoruz.
+
+
+
+# turtlebot3 düz gitme örneği
+
+sctipts klasörünün içerisine duz_git.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminali ikiye bölüyoruz. İlk pencerede roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch komutunu çalıştırıp boş dünya ortamını gazeboda açmış oluyoruz . ikinci ekranda rosrun uygulamalar duz_git.py komutunu çalıştırarak python dosyamızı başlatıyoruz. Simülasyon sonunda turtlebot3 1 metre düz gitmiş oluyor.
+
+
 
 
 
