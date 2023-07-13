@@ -54,6 +54,13 @@ sctipts klasörünün içerisine turlesim_yol.py adında bir dosya oluşturuyoru
 
 
 
+# turtlesim senkron örneği
+
+sctipts klasörünün içerisine senkron_turtles.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminali dörde bölüyoruz.İlk ekrandan roscore komutuyla ros u aktif ediyoruz. İkinci ekrana rosrun turtlesim turtlesim_node komutunu yazarak turlesim1 i başlatıyoruz. Üçüncü ekrana rosrun turtlesim turtlesim_node __name:=turtle2 yazarak turlesim2 yi başlatıyoruz. Dördüncü ekranda rosrun uygulamalar senkron_turtle.py komutunu çalıştırıyoruz. Turtle1 ve turtle2 aynı anda daire çiziyor.
+
+
+
+
 
 
 
