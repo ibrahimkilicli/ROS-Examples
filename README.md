@@ -42,6 +42,16 @@ sctipts klasörünün içerisine duz_git.py adında bir dosya oluşturuyoruz. Da
 
 
 
+# turtlesim kare yuvarlak üçgen örneği
+
+sctipts klasörünün içerisine turlesim.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminali üçe bölüyoruz. İlk ekrandan roscore komutuyla ros u aktif ediyoruz. İkinci ekrana rosrun turtlesim turtlesim_node komutunu yazarak turlesimi başlatıyoruz. Son ekrandan rosrun uygulamalar turtlesim.py komutunu yazıp kodu çalıştırıyoruz. Turle ın çizmesini istediğiniz şekli giriyorsunuz. Şekli çiziyor ve en sonunda ekranı temizleyip arka plan rengini değiştiriyor.
+
+
+
+
+
+
+
 
 
 
