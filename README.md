@@ -48,6 +48,12 @@ sctipts klasörünün içerisine turlesim.py adında bir dosya oluşturuyoruz. D
 
 
 
+# turtlesim belirlenmiş yol örneği
+
+sctipts klasörünün içerisine turlesim_yol.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminali üçe bölüyoruz.İlk ekrandan roscore komutuyla ros u aktif ediyoruz. İkinci ekrana rosrun turtlesim turtlesim_node komutunu yazarak turlesimi başlatıyoruz. Üçüncü ekranda rosrun uygulamalar turtlesim_yol.py komutunu yazarak python dosyamızı çalıştırıyoruz. Dosyanın içerisinde belirlenmiş olan yolu turtle izliyor ve tamamlıyor.
+
+
+
 
 
 
