@@ -60,6 +60,14 @@ sctipts klasörünün içerisine senkron_turtles.py adında bir dosya oluşturuy
 
 
 
+# Turtlebot ile sanal ortamda haritalama ve navigasyon
+
+Terminal ekranını dörde bölüyoruz. İlk ekranda roslaunch turtlebot3_gazebo turtlebot3_house.launch komutunu yazarak gazeboyu başlatıyoruz. ikinci ekrandan roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping komutunu girerek Rvizi çalıştırıyoruz. Üçüncü ekranda teleopu başlatmak için rosrun turtlebot3_teleop turtlebot3_teleop_key komutunu giriyoruz.
+House un tamamını W,A,S,D,X ile gezerek Rvizde harita oluşturuyoruz. Oluşturduğumuz haritayı dördüncü ekranda rosrun map_server map_saver -f ~/tb3_house_map yazarak kaydediyoruz. Daha sonra gazebo ve Rvizi kapatıyoruz. Tekrardan turtlebot3_gazebo turtlebot3_house.launch yazarak gazebo ortamını başlatıyoruz. Daha sonra roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/ibrahim/tb3_house_map.yaml yazarak kaydettiğimiz haritayı Rvizde açıyoruz. Turtlebot un gazebo ve Rvizde ki konumunu eşitleyip 2D nav goal çubuğunu kullanarak haritanın her hangi bir yerine robotu otonom yönlendirebiliyoruz.
+
+
+
+
 
 
 
