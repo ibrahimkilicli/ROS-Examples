@@ -67,6 +67,12 @@ House un tamamını W,A,S,D,X ile gezerek Rvizde harita oluşturuyoruz. Oluştur
 
 
 
+# Turtlebot düz gidip engel gördüğünde döndüğü örnek
+
+sctipts klasörünün içerisine duz_git_don.py adında bir dosya oluşturuyoruz. Daha sonra bu dosyaya kodlarımızı yazıp terminalden chmod +x le derliyoruz. Terminal ekranını ikiye bölüyoruz. İlk ekranda roslaunch turtlebot3_gazebo turtlebot3_house.launch komutunu çalıştırıyoruz. İkinci ekranda rosrun uygulamalar duz_git_don.py yazarak yazdığımız kodu çalıştırıyoruz. Turtlebot3 düz hareket ediyor bir metre kala duvar görürse dönüp düz devam ediyor. 
+
+
+
 
 
 
