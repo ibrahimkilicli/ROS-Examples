@@ -1,19 +1,18 @@
-# birfen-staj
+**birfen-staj**
 
-
-# odom verileri
+**Odom Verileri**
 
 Odometri, bir robotun tekerleklerinin dönme hareketlerini ve mesafelerini kullanarak konum tahmini yapma yöntemidir. Bu tahminler, tekerlek dönüş sayıları ve tekerlek çapları gibi bilgilere dayanır. Odometri, robotun kısa mesafeli hareketlerde ve anlık pozisyon güncellemelerinde kullanılır.
 
-Turtlebot3' ün odom verilerini çekebilmemiz için terminali öncelikle ikiye bölüp herhangi bir dünya başlatmamız gerekli. Örneğin roslaunch turtlebot3_gazebo turtlebot3_stage_4.launch başlatılabilir. Daha sonra diğer terminal ekranında rosrun uygulamalar odom_verileri.py komutunu yazarak python dosyasını başlatmalıyız. Bu işlemlerden sonra odom bilgileri terminalde listelenecektir.
+Turtlebot3'ün odom verilerini çekmek için öncelikle terminali ikiye bölmeliyiz ve bir dünya başlatmamız gerekmektedir. Örneğin, `roslaunch turtlebot3_gazebo turtlebot3_stage_4.launch` komutunu kullanarak bir dünya başlatabiliriz. Daha sonra diğer terminal ekranında `rosrun uygulamalar odom_verileri.py` komutunu yazarak Python dosyasını başlatmalıyız. Bu işlemlerden sonra odom bilgileri terminalde listelenecektir.
 
+**cmd_vel Topic Yayını**
 
+`cmd_vel` genellikle robotlara hız ve yönlendirme komutlarını iletmek için kullanılır. Bu komutlarla robotu hareket ettirebilir ve kontrol edebiliriz.
 
-# cmd_vel topic yayını
+Öncelikle terminal ekranını üçe bölüyoruz. İlk terminalde `roscore` komutunu yazarak ROS çekirdeğini aktif ediyoruz. İkinci terminalde `rosrun uygulamalar cmd_vel.py` dosyasını başlatıyoruz. Üçüncü terminalde ise `rostopic echo /cmd_vel` komutunu yazarsak `cmd_vel` üzerinden yayınlanan hız mesajları görüntülenebilir.
 
-cmd_vel genelde robotlara hız ve yönlendirme komutlarını iletmek için kullanılır.
-Öncelikle terminal ekranını üçe bölüyoruz. Ekranın birinde roscore yazarak ros çekirdiğini aktif ediyoruz. İkinci ekranda rosrun uygulamalar cmd_vel.py dosyasını başlatıyoruz. Üçüncü ekranda ise 
-rostopic echo /cmd_vel yazarsak cmd_vel üzerinden yayınlanan hız mesajı görüntülenebilir.
+Bu şekilde, `cmd_vel` konusu aracılığıyla robotun hız ve yönlendirme komutlarını görebilir ve robotun davranışını kontrol edebiliriz. Bu tür komutlar, Turtlebot3 gibi mobil robotlarla etkileşimde bulunmak ve onları yönlendirmek için kullanışlıdır.
 
 
 
